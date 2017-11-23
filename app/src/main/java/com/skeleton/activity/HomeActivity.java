@@ -79,7 +79,9 @@ public class HomeActivity extends BaseActivity {
                 homeIntent.addCategory( Intent.CATEGORY_HOME );
                 homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(homeIntent);
-                Intent home = new Intent(HomeActivity.this,TutorialActivity.class);
+                Intent home = new Intent(HomeActivity.this,SplashActivity.class);
+
+                System.exit(0);
                 startActivity(home);
 
 
