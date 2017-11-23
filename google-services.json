@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "391238960437",
+    "firebase_url": "https://mytodoapp-9dca2.firebaseio.com",
+    "project_id": "mytodoapp-9dca2",
+    "storage_bucket": "mytodoapp-9dca2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391238960437:android:86f0c98e401df843",
+        "android_client_info": {
+          "package_name": "com.echessa.todo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391238960437-tbcvmnotckebrfp1spr9ol8r8err469j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe2gAf1f2u3LNSVqcMKd1DkbCcKxMGmoA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

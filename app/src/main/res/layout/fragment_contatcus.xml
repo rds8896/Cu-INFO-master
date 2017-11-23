@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="@dimen/font_xxlarge"
+        android:padding="20dp"
+        android:text="Can be designed as contactus screen and intentd can be fired to dialer and email and for location intent can be fired to google maps"
+        android:layout_height="200dp"/>
+</LinearLayout>

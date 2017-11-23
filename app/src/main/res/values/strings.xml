@@ -1,0 +1,244 @@
+<resources>
+    <string name="msg_wifi_enabled">Wifi enabled</string>
+    <string name="msg_mobile_data_enabled">Mobile data enabled</string>
+    <string name="msg_not_connected_to_internet">Not connected to Internet</string>
+    <string name="msg_warning">WARNING!</string>
+    <string name="msg_device_rooted">This device is rooted.We are not responsible for any kind of data loss and hack.Use it at your own risk!!</string>
+
+    <string name="update_found">Update found</string>
+    <string name="critical_update_msg">There is newer version of this app available.</string>
+    <string name="update_msg">There is newer version of this app available.</string>
+    <string name="log_fcm_message_id">"FCM Message Id: "</string>
+    <string name="log_fcm_notification_message">"FCM Notification Message: "</string>
+    <string name="log_fcm_data">"FCM Data Message: "</string>
+    <string name="log_fcm_data_message">"FCM Data Message:(TA)G "</string>
+    <string name="text_ok">OK</string>
+    <string name="text_exit">Exit</string>
+    <string name="text_retry">Retry</string>
+    <string name="session_expired">Session expired.</string>
+    <string name="loading">Loading…</string>
+
+    <!-- Image Chooser -->
+    <string name="text_cancel">Cancel</string>
+    <string name="text_camera">Camera</string>
+    <string name="text_setting">Settings</string>
+    <string name="text_gallery">Gallery</string>
+    <string name="text_multiple">Multiple</string>
+    <string name="text_choose_image">Choose Image</string>
+    <string name="permission_camera_storage_msg">Permissions are required for camera &amp; storage.</string>
+    <string name="permission_camera_storage_denied_msg">Permissions denied. Please grant permission for camera &amp; storage in setting.</string>
+
+    <!--Error-->
+    <string name="error_email_field_empty">Please enter email address.</string>
+    <string name="error_invalid_email">Please enter valid email address.</string>
+    <string name="error_password_field_empty">Please enter password.</string>
+    <string name="error_confirm_password_field_empty">Please enter confirm password.</string>
+    <string name="error_password_must_be_greater_than_5_character">Password must have 8 character.</string>
+    <string name="error_phone_number_field_empty">Please enter phone number.</string>
+    <string name="error_invalid_phone_number">Please enter valid phone number.</string>
+    <string name="error_first_name_field_empty">Please enter first name</string>
+    <string name="error_name_field_empty">Please enter name</string>
+    <string name="error_last_name_field_empty">Please enter last name</string>
+    <string name="error_name_two_character_long">Name must contain at least two characters</string>
+    <string name="error_first_name_two_character_long">First name must contain at least two characters</string>
+    <string name="error_last_name_two_character_long">Last name must contain at least two characters</string>
+    <string name="error_name_special_number_character">Name cannot contain number &amp; special characters</string>
+    <string name="error_first_name_special_number_character">First name cannot contain number &amp; special characters</string>
+    <string name="error_last_name_special_number_character">Last name cannot contain number &amp; special characters</string>
+    <string name="error_password_mismatch">Password Not Match!</string>
+    <string name="error_no_files_added">No files added</string>
+    <string name="error_device_not_supported">This device is not supported.</string>
+    <string name="error_internet_not_connected">Not connected to internet. Please check your internet connection or try again later.</string>
+    <string name="error_fb_login_failed">Facebook Login failed!!</string>
+    <string name="error_not_a_valid_image_file">File is not a valid image.</string>
+    <string name="error_location_not_selected">Location Not Selected</string>
+    <string name="error_max_image">Maximum 10 images allowed</string>
+
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="password_matched">Password Matched</string>
+    <string name="error_password_contain_Capital_alpha">Password Must Contain a Capital Alphabet</string>
+    <string name="error_password_contain_small_alpha">Password Must Contain a alphabet</string>
+    <string name="error_password_contain_special_char">must contain at least 1 special character</string>
+    <string name="error_password_contain_number">must contain at least 1 numeric character</string>
+    <string name="error_empty_edit_text">This is Empty</string>
+    <!--Api Key-->
+    <!--<string name="google_maps_key">AIzaSyAe5v3KPjnDivYRCPtdME_6YJUI5UPJdi8</string>-->
+    <string name="google_maps_key">AIzaSyCp3D5u7WjojilAP5ZLZTLoVQ_zLuikv8g</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_socket">SocketActivity</string>
+    <string name="permission_denied_explanation">permission denied</string>
+    <string name="settings">Settings</string>
+    <string name="permission_rationale">permission rationale</string>
+    <string name="latitude_label">latLabel</string>
+    <string name="longitude_label">longLable</string>
+    <string name="last_update_time_label">updateTime</string>
+
+    <!--Button -->
+    <string name="btn_save">Save</string>
+    <string name="btn_Share_refral_whats_app">Share Refral code to Whats App</string>
+    <string name="btn_add_card">ADD CARD</string>
+    <string name="btn_location">Plot No: 5, Ground Floor, CDCL Building, Madhya Marg, Sector 28B, Chandigarh, 160019</string>
+    <string name="btn_call">+91 172-265-9902</string>
+    <string name="btn_mail">contact@click-labs.com</string>
+    <string name="btn_verify">Verify</string>
+    <string name="btn_resend_otp">Resend OTP</string>
+    <string name="btn_Edit_number">Edit Number</string>
+    <string name="btn_sign_in"><b>Login</b></string>
+    <string name="btn_sign_up"><b>Register</b></string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_sign_in_with_facebook">Facebook</string>
+    <string name="btn_next">Next</string>
+
+
+    <!--Material Edit Text-->
+    <string name="met_vehicle_type">Vehicle Type</string>
+    <string name="met_vehicle_company">Vehicle Company</string>
+    <string name="met_vehicle_year">Vehicle Year</string>
+    <string name="met_vehicle_number">Vehicle Number</string>
+    <string name="met_driving_license">Driving License</string>
+    <string name="met_create_password">Create a password</string>
+    <string name="metEmail">Email</string>
+    <string name="met_email_or_number">Email/Mobile Number</string>
+    <string name="met_confirm_password">Confirm Password</string>
+    <string name="met_new_password">New Password</string>
+    <string name="met_old_passowrd">Old Password</string>
+    <string name="met_reset_password_token">Reset Password Token</string>
+    <string name="metPassword">Password</string>
+    <string name="met_phone_number">Mobile Number</string>
+    <string name="met_first_name">First Name</string>
+    <string name="met_last_name">Last Name</string>
+    <string name="met_user_name">Name</string>
+    <string name="reenter_password">ReEnter Password</string>
+
+    <!--Tool bar titles-->
+    <string name="toolbar_title_refer_and_earn">REFER AND EARN</string>
+    <string name="toolbar_title_home">HOME</string>
+    <string name="toolbar_title_add_card">Add Card</string>
+    <string name="toolbar_title_signin">LOGIN</string>
+    <string name="toolbar_title_signup">REGISTER</string>
+    <string name="toolbar_title_contact_us">CONTACT US</string>
+    <string name="toolbar_title_OTP">OTP Verification</string>
+    <string name="toolbar_title_forgot_password">FORGOT PASSWORD</string>
+
+
+    <string name="help_desk_clicklabs">Help Desk Clicklabs</string>
+    <!--&lt;!&ndash;Sign In &ndash;&gt;-->
+    <!--<string name="facebook_app_id">688939657964787</string>-->
+    <!--<string name="fb_login_protocol_scheme">fb688939657964787</string>-->
+
+
+    <!--Text View-->
+    <string name="text_number">+91</string>
+    <string name="text_forgot_des">Enter your email address and we will send you a link to reset the password.</string>
+    <string name="text_or">or</string>
+    <string name="text_terms_and_condition1">TERMS &amp; CONDITIONS</string>
+    <string name="text_terms_and_condition">By Continuing you are agreeing to our</string>
+    <string name="text_continue_with">Continue with</string>
+    <string name="text_refral_code"><b>Clicklabs100</b></string>
+    <string name="text_share_with_others"><b><u>View more sharing options</u></b></string>
+    <string name="text_add_card">Add Card</string>
+    <string name="text_add_car">Car Details</string>
+    <string name="text_refer_and_earn">Refer and Earn</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_view_logout">Logout</string>
+    <string name="text_home">Home</string>
+    <string name="text_your_account">YOUR ACCOUNT</string>
+    <string name="text_skip"><b>Skip</b></string>
+    <string name="text_hint_cvv">CVV</string>
+    <string name="text_hint_card_details">card no:</string>
+    <string name="text_card_details">Card Details</string>
+    <string name="text_hint_date">Month/Year</string>
+    <string name="text_dummy">Enter the Verification code send to +91</string>
+    <string name="text_verification">Verification</string>
+    <string name="text_otp">Please Enter OTP number you have recieved as an SMS on phone no :</string>
+    <string name="text_SignIn">SignIn</string>
+    <string name="text_car_details">Car Details</string>
+    <string name="text_forgot_password"><b>Forgot Password?</b></string>
+    <string name="text_change_password"><b>Change Password</b></string>
+    <string name="text_password_updated">Password Updated</string>
+    <string name="text_otp_send">OTP send Successfully</string>
+    <string name="text_success">success</string>
+    <string name="text_available">Available</string>
+    <string name="instruction">Your Calendar think you are unavailable.\nTo make yourself available for booking.\nPlease tap on time slot or day</string>
+
+    <!--Max Length-->
+    <string name="max_length_Card_Details">19</string>
+    <string name="max_length_cvv">3</string>
+    <string name="title_activity_home1">HomeActivity1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_drawer_communicate">Communicate</string>
+
+
+    <!--Radio Button-->
+    <string name="radio_button_create_account">Create a New Account</string>
+    <string name="radio_button_login"><b>Login.</b>Already a customer</string>
+
+    <!-- Toast Warnings -->
+    <string name="number_length_excede">Number Should be under 15 digit</string>
+    <string name="terms_and_conditions"><b>Terms and Condition</b>\will be available soon</string>
+    <string name="remember_me">Remember Me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="on_duty">On Duty</string>
+    <string name="notification">Notification</string>
+    <string name="schedule">Schedule</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="text_support">Support</string>
+    <string name="user_name">User Name</string>
+    <!-- TAB TExt -->
+    <string name="tab_home">Home</string>
+    <string name="tab_booking">Booking</string>
+    <string name="tab_status">Status</string>
+    <string name="tab_profile">Profile</string>
+    <!-- String Arrays -->
+    <string-array name="vehicle_type">
+        <item>Car</item>
+        <item>Sedan</item>
+        <item>SUV</item>
+    </string-array>
+
+    <string-array name="vehicle_company">
+        <item>Maruti</item>
+        <item>Toyota</item>
+        <item>Honda</item>
+        <item>Ferrari</item>
+    </string-array>
+    <string-array name="vehicle_year">
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+    </string-array>
+    <!-- Dialog title -->
+    <string name="dialog_title_vehicle_company"> Select Company</string>
+    <string name="dialog_title_vehicle_type">Select Vehicle Type</string>
+    <string name="dialog_title_vehicle_year">Select Year</string>
+    <string name="text_unavailable">UnAvailable</string>
+    <string name="text_busy">Busy</string>
+    <string name="text_see_instruction">See Instruction</string>
+    <string name="button_accept">Accept</string>
+    <string name="button_decline">Decline</string>
+    <string name="curr_loc">Current Location</string>
+    <string name="cant_fetch_location">Cant fetch the location</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="contact_us_number">Number</string>
+    <string name="home">Home</string>
+    <string name="booking">Way to Chitkara</string>
+    <string name="notifications">Video Lectures</string>
+    <string name="help">About Developers</string>
+    <string name="logout">Logout</string>
+    <string name="you_are_looking_for_which_subject_lectures_please_select">You are looking for which subject lectures please select</string>
+    <string name="des_C">C is an imperative procedural language. It was designed to be compiled using a relatively straightforward compiler, to provide low-level access to memory, to provide language constructs that map efficiently to machine instructions, and to require minimal run-time support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant and portably written C program can be compiled for a very wide variety of computer platforms and operating systems with few changes to its source code. The language has become available on a very wide range of platforms, from embedded microcontrollers to supercomputers.</string>
+    <string name="player_error">Error occurred</string>
+    <string name="press_again_to_exit">Press again to exit</string>
+</resources>

@@ -1,0 +1,115 @@
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+                                              xmlns:tools="http://schemas.android.com/tools"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent"
+                                              android:background="@color/gray_light"
+                                              android:orientation="vertical"
+                                              tools:context="com.skeleton.fragment.DrawerMenuFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/margin_normal">
+
+        <ImageView
+            android:id="@+id/nav_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_close_black_24dp"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/juspayicon"/>
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:id="@+id/aboutus"
+                style="@style/NavMenuItem"
+                android:onClick="onClick"
+                android:theme="@style/nav_text">
+
+                <TextView
+                    style="@style/nav_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="About Us"/>
+            </android.support.v7.widget.ContentFrameLayout>
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:id="@+id/aboutdev"
+                style="@style/NavMenuItem"
+                android:onClick="onClick"
+                android:theme="@style/nav_text">
+
+                <TextView
+                    style="@style/nav_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="About Developer"/>
+            </android.support.v7.widget.ContentFrameLayout>
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:id="@+id/support"
+                style="@style/NavMenuItem"
+                android:onClick="onClick"
+                android:theme="@style/nav_text">
+
+                <TextView
+                    style="@style/nav_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_support"/>
+            </android.support.v7.widget.ContentFrameLayout>
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:id="@+id/contactus"
+                style="@style/NavMenuItem"
+                android:onClick="onClick"
+                android:theme="@style/nav_text">
+
+                <TextView
+                    style="@style/nav_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Contact Us"/>
+            </android.support.v7.widget.ContentFrameLayout>
+
+            <android.support.v7.widget.ContentFrameLayout
+                android:id="@+id/fl_logout"
+                style="@style/NavMenuItem"
+                android:onClick="onClick"
+                android:theme="@style/nav_text">
+
+                <TextView
+                    style="@style/nav_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/text_logout"/>
+            </android.support.v7.widget.ContentFrameLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

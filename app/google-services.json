@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "554363946466",
+    "firebase_url": "https://juspayproject.firebaseio.com",
+    "project_id": "juspayproject",
+    "storage_bucket": "juspayproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554363946466:android:7a90d7bd1b0b0f4d",
+        "android_client_info": {
+          "package_name": "com.skeleton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554363946466-mmemp66ijiiq661oss59si5vr42i74pq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skeleton",
+            "certificate_hash": "173176677d220bf29c4115b9b7e6cfe98015531f"
+          }
+        },
+        {
+          "client_id": "554363946466-rotbr7kpklgojam91jpa6iqe4n60gqr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE7dfRGcYh3iWEPXHCNyS-LNKhqdFrwHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554363946466-rotbr7kpklgojam91jpa6iqe4n60gqr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

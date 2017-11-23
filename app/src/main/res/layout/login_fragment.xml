@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSignIn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/etEmail"
+        style="@style/edit_text"
+        android:background="@drawable/rectangle_edit_text"
+        android:hint="@string/met_email_or_number"
+        android:inputType="textEmailAddress"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            style="@style/edit_text"
+            android:background="@drawable/rectangle_edit_text"
+            android:hint="@string/metPassword"
+            android:inputType="textPassword"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_eye_visible"
+            android:layout_width="@dimen/button_height_normal"
+            android:layout_height="@dimen/button_height_normal"
+            android:layout_alignBottom="@+id/etPassword"
+            android:layout_alignEnd="@+id/etPassword"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_eye_active_inactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_visible"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_marginStart="10dp"
+        android:text="@string/remember_me"
+        android:id="@+id/cb_rememberme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        style="@style/primary_button"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_normal"
+        android:background="@color/sky_blue"
+        android:text="@string/btn_sign_in"
+        android:textColor="@color/white"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvForgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/text_forgot_password"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/sky_blue"
+        android:textSize="@dimen/font_normal"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>

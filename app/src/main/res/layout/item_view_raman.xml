@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/rectangle"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:padding="@dimen/padding_normal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_large"
+            android:textStyle="bold"
+            tools:text="25 Oct 2017"/>
+
+        <TextView
+            android:id="@+id/tvTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:padding="@dimen/padding_normal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_large"
+            android:textStyle="italic"
+            tools:text="May 28, 2010 - poorvaavalokan PNG ka aakaar SVG faail: 48 × 48 piksel anya resolutions: 240 × 240 piksel ... Commons-emblem-registered-trademark black.svg ... Trophy 2006.gif; chitr:Chelsea "/>
+
+    </LinearLayout>
+</LinearLayout>

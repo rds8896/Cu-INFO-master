@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_normal"
+        android:text="@string/you_are_looking_for_which_subject_lectures_please_select"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_xlarge"/>
+
+    <LinearLayout
+        android:id="@+id/tut1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin_x_large"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/clang"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:id="@+id/cpp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C++"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+        <TextView
+            android:id="@+id/java"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Java"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:id="@+id/ds"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Data Structure"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

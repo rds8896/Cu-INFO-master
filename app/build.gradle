@@ -1,0 +1,155 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'checkstyle'
+//preBuild.dependsOn('checkstyle')
+//assemble.dependsOn('lint')
+//check.dependsOn('checkstyle')
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    /**
+     * Define you Project Name here
+     */
+    def appName = 'CU-INFO'
+
+/**
+ *
+ * For Internal user only
+ */
+    def APP_NAME = '\"' + (System.getenv("APP_NAME") ?: appName) + '\"'
+
+    defaultConfig {
+        flavorDimensions "none"
+        applicationId "com.skeleton"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 100
+        versionName "2.0.1"
+        resValue "string", "app_name", APP_NAME
+        buildConfigField "String", "APP_NAME", APP_NAME
+        resValue "string", "facebook_app_id", "864848737000817"
+        resValue "string", "google_Maps_Api_key", "AIzaSyCE7dfRGcYh3iWEPXHCNyS-LNKhqdFrwHM"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "GOOGLE_URL", '"https://maps.googleapis.com/maps/api/"'
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources true
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources true
+        }
+    }
+    productFlavors {
+        UNIVERSAL {
+            dimension "none"
+            buildConfigField 'String', 'BASE_URL', '"https://dev-juggernaut.clicklabs.in/"'
+            buildConfigField 'boolean', 'WATER_MARK', 'true'
+            buildConfigField 'boolean', 'IS_UNIVERSAL', 'true'
+            buildConfigField 'String', 'BUILD_SERVER_TYPE', '"Dev"'
+            buildConfigField 'String', 'GOOGLE_URL', '"https://maps.googleapis.com/"'
+        }
+        DEV {
+            dimension "none"
+            buildConfigField 'String', 'BASE_URL', '"http://13.229.62.144:3001/"'
+            buildConfigField 'boolean', 'WATER_MARK', 'true'
+            buildConfigField 'boolean', 'IS_UNIVERSAL', 'false'
+            buildConfigField 'String', 'BUILD_SERVER_TYPE', '"Dev"'
+            buildConfigField 'String', 'GOOGLE_URL', '"https://maps.googleapis.com/"'
+        }
+        QA {
+            dimension "none"
+            buildConfigField 'String', 'BASE_URL', '"https://test-juggernaut.clicklabs.in/"'
+            buildConfigField 'boolean', 'WATER_MARK', 'true'
+            buildConfigField 'boolean', 'IS_UNIVERSAL', 'false'
+            buildConfigField 'String', 'BUILD_SERVER_TYPE', '"Test"'
+            buildConfigField 'String', 'GOOGLE_URL', '"https://maps.googleapis.com/"'
+        }
+        LIVE {
+            dimension "none"
+            buildConfigField 'String', 'BASE_URL', '"https://juggernaut.clicklabs.in/"'
+            buildConfigField 'boolean', 'WATER_MARK', 'false'
+            buildConfigField 'boolean', 'IS_UNIVERSAL', 'false'
+            buildConfigField 'String', 'BUILD_SERVER_TYPE', '"Live"'
+            buildConfigField 'String', 'GOOGLE_URL', '"https://maps.googleapis.com/"'
+        }
+
+
+        applicationVariants.all { variant ->
+            variant.outputs.all {
+
+                //Change your application name here of output apk
+
+                outputFileName = ("Base-${variant.productFlavors[0].name}_${buildType.name}_v${variant.versionCode}.apk").toLowerCase()
+
+            }
+
+        }
+    }
+}
+
+dependencies {
+    /**
+     * If there are any jar file include
+     */
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+
+    })
+
+    compile('io.socket:socket.io-client:0.8.3') {
+        exclude group: 'org.json', module: 'json'
+    }
+    /**
+     * for Rx java & other binaries related to ReactiveX
+     */
+    // compile 'com.google.android.gms:play-services:11.0.1'
+    //google + authentication
+    //Circular image
+        compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:customtabs:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //compile 'com.google.firebase:firebase-messaging:11.0.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.1'
+   // compile 'com.google.android.gms:play-services-wearable:11.0.1'
+    compile 'com.google.android.gms:play-services-location:11.0.1'
+    compile 'com.google.android.gms:play-services-places:11.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'io.paperdb:paperdb:2.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.22.0'
+    compile 'com.kbeanie:multipicker:1.1.31@aar'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'io.reactivex:rxjava-async-util:0.21.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.3.0'
+    compile 'com.trello:rxlifecycle:0.4.0'
+    compile 'com.phlox.widget:android-date-picker:0.2.1'
+    compile 'com.trello:rxlifecycle-components:0.4.0'
+    compile 'com.google.android.gms:play-services-auth:11.0.1'
+    compile 'com.matthew-tamlin:sliding-intro-screen:3.0.2'
+    compile 'me.relex:circleindicator:1.2.2@aar'
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+    compile 'com.github.mukeshsolanki:country-picker-android:1.1.9'
+    compile 'com.github.MFlisar:DragSelectRecyclerView:0.3'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC1'
+}
+apply plugin: 'com.google.gms.google-services'

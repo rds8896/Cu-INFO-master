@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/text_home"/>
+        <item
+            android:id="@+id/nav_add_card"
+            android:icon="@drawable/visa_logo"
+            android:title="@string/text_add_card"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Videos"/>
+        <item
+            android:id="@+id/nav_car_details"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/text_car_details"/>
+    </group>
+
+    <item android:title="@string/title_drawer_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/text_refer_and_earn"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/text_logout"/>
+        </menu>
+    </item>
+
+</menu>

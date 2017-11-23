@@ -1,0 +1,93 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- font sizes -->
+    <dimen name="font_xxxlarge">30sp</dimen>
+    <dimen name="font_xxlarge">22sp</dimen>
+    <dimen name="font_xlarge">20sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_xsmall">10sp</dimen>
+
+    <!-- typical spacing between two views -->
+    <dimen name="spacing_xhuge">120dp</dimen>
+    <dimen name="spacing_huge">60dp</dimen>
+    <dimen name="spacing_xlarge">40dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_medium">20dp</dimen>
+    <dimen name="spacing_normal">14dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_xsmall">8dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_very_tiny">2dp</dimen>
+    <dimen name="cell_spacing">1dp</dimen>
+
+    <!-- typical sizes of views -->
+    <dimen name="button_height_tall">60dp</dimen>
+    <dimen name="button_height_normal">40dp</dimen>
+    <dimen name="button_height_short">35dp</dimen>
+    <dimen name="button_height_small">24dp</dimen>
+    <dimen name="button_height_tiny">21dp</dimen>
+
+    <!--met editext-->
+    <dimen name="default_padding_top">8dp</dimen>
+    <dimen name="default_padding_bottom">8dp</dimen>
+    <dimen name="inner_padding_left">0dp</dimen>
+    <dimen name="inner_padding_right">0dp</dimen>
+    <dimen name="floating_label_text_size">12sp</dimen>
+    <dimen name="bottom_text_size">12sp</dimen>
+    <dimen name="inner_components_spacing">8dp</dimen>
+    <dimen name="bottom_ellipsis_height">4dp</dimen>
+    <dimen name="post_image_height">250dp</dimen>
+    <dimen name="empty_nav_view_height">25dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="cell_height">40dp</dimen>
+
+    <!-- Image Button Size-->
+    <dimen name="iv_small_button">40dp</dimen>
+    <dimen name="iv_medium_button">60dp</dimen>
+    <dimen name="iv_profile_width">60dp</dimen>
+    <dimen name="iv_profile_height">60dp</dimen>
+    <dimen name="iv_car_image">80dp</dimen>
+    
+    <!--margin -->
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">25dp</dimen>
+    <dimen name="margin_x_large">40dp</dimen>
+    <dimen name="margin_xxlarge">60dp</dimen>
+
+    <!--Padding -->
+    <dimen name="padding_very_small">2dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_medium">15dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_xlarge">25dp</dimen>
+    <dimen name="padding_xxlarge">40dp</dimen>
+    <dimen name="round_edit_text">10dp</dimen>
+    <dimen name="image_width_height">80dp</dimen>
+    <dimen name="drawer_width">256dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!--Navigation Drawer Item -->
+    <dimen name="nav_menu_height">40dp</dimen>
+    <dimen name="nav_menu_text_size">17sp</dimen>
+    <dimen name="nav_menu_bar_length">60dp</dimen>
+    <dimen name="nav_menu_bar_height">2dp</dimen>
+    <dimen name="nav_menu_bar_width">30dp</dimen>
+    <dimen name="nav_item_margin_start">40dp</dimen>
+
+    <!--Dialog dimes -->
+    <dimen name="dialog_image_size">40dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_200">200dp</dimen>
+</resources>

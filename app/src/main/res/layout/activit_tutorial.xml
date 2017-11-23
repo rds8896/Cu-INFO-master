@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+       <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivSplash"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@mipmap/juspayicon"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_weight="0.96">
+
+        </android.support.v4.view.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/dot_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:ci_drawable="@drawable/active_square"
+            app:ci_drawable_unselected="@drawable/ic_panorama_fish_eye_black_24dp"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:id="@+id/rl_animate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_tall"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:weightSum="1"
+            >
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@color/white"
+                android:text="@string/btn_sign_up"
+                android:textAllCaps="false"
+                android:textColor="@color/sky_blue"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@color/white"
+                android:text="@string/btn_sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/sky_blue"
+                />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+</RelativeLayout>

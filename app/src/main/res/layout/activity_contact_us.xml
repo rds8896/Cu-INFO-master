@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/gradient_clicklabs"
+    android:orientation="vertical"
+    tools:context="com.skeleton.activity.ContactUsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_location"
+        style="@style/primary_button"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_weight=".25"
+        android:background="@drawable/button_shape"
+        android:drawableStart="@drawable/location"
+        android:maxLines="2"
+        android:paddingStart="@dimen/padding_normal"
+        android:text="@string/btn_location"
+        android:textColor="@color/black"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_phone_number"
+        style="@style/primary_button"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_weight=".25"
+        android:background="@drawable/button_shape"
+        android:drawableStart="@drawable/call"
+        android:maxLines="2"
+        android:paddingStart="@dimen/padding_normal"
+        android:text="@string/btn_call"
+        android:textColor="@color/black"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_message"
+        style="@style/primary_button"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_weight=".25"
+        android:background="@drawable/button_shape"
+        android:drawableStart="@drawable/mail_81_copy"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/padding_normal"
+        android:text="@string/btn_mail"
+        />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

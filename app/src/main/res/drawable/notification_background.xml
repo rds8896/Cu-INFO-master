@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+  <solid
+      android:color="@color/button_color_pressed"/>
+  <size
+      android:height="@dimen/nav_menu_text_size"
+      />
+   <padding
+       android:bottom="@dimen/padding_very_small"
+       android:left="@dimen/padding_very_small"
+       android:right="@dimen/padding_very_small"
+       android:top="@dimen/padding_very_small"/>
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"/>
+</shape>

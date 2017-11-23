@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match"
+    android:background="@drawable/gradient_clicklabs"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/margin_xxlarge"
+        android:layout_marginStart="@dimen/margin_xxlarge"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_profile_image"
+            android:layout_width="@dimen/image_width_height"
+            android:layout_height="@dimen/image_width_height"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_small"
+            android:src="@color/white"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvdrawerUserAccount"
+            style="@style/text_view_drawer"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_large"
+            android:text="@string/text_your_account"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_xsmall"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_xlarge"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_home"
+            style="@style/text_view_drawer"
+            android:drawablePadding="@dimen/padding_normal"
+            android:drawableStart="@drawable/ic_home"
+            android:text="@string/text_home"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_payment"
+            style="@style/text_view_drawer"
+            android:drawablePadding="@dimen/padding_normal"
+            android:drawableStart="@drawable/group_9"
+            android:text="@string/text_add_card"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_refer_and_earn"
+            style="@style/text_view_drawer"
+            android:drawablePadding="@dimen/padding_normal"
+            android:drawableStart="@drawable/group_9"
+            android:text="@string/text_refer_and_earn"
+            />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_logout"
+        style="@style/text_view_drawer"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/padding_normal"
+        android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+        android:text="@string/text_view_logout"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_small"
+        />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.skeleton.activity.GetSetTaskActivity">
+
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/app_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llScreen1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvRaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/Add"
+                    style="@style/primary_button"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:onClick="onClick"
+                    android:text="Add Another Task"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llScreen2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.skeleton.util.customview.MaterialEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:hint="Name"
+                    android:textColor="@color/black"/>
+
+                <com.skeleton.util.customview.MaterialEditText
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:hint="University Id"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/task"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:background="@drawable/rectangle"
+                    android:gravity="start"
+                    android:hint="Enter your task details"
+                    android:padding="@dimen/padding_normal"/>
+
+                <Button
+                    android:id="@+id/save"
+                    style="@style/primary_button"
+                    android:layout_margin="@dimen/margin_large"
+                    android:onClick="onClick"
+                    android:text="Save"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

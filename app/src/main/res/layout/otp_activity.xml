@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/text_view"
+        android:layout_margin="@dimen/margin_large"
+        android:text="@string/text_verification"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_xxxlarge"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_phone_number"
+        style="@style/text_view"
+        android:layout_margin="@dimen/margin_large"
+        android:gravity="left"
+        android:text="@string/text_dummy"
+        android:textSize="@dimen/font_large"
+        />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etOTP1"
+            style="@style/met_otp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etOTP2"
+            style="@style/met_otp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etOTP3"
+            style="@style/met_otp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etOTP4"
+            style="@style/met_otp"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_verify"
+        style="@style/primary_button"
+        android:layout_margin="@dimen/margin_large"
+        android:background="@color/sky_blue"
+        android:text="@string/btn_verify"
+        android:textColor="@color/white"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_resendOTP"
+        style="@style/primary_button"
+        android:layout_margin="@dimen/margin_large"
+        android:background="@color/sky_blue"
+        android:text="@string/btn_resend_otp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your OTP is 1111"
+        android:textSize="@dimen/font_xxlarge"/>
+</android.support.v7.widget.LinearLayoutCompat>

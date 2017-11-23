@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- grayscale -->
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#f5f5f5</color>
+    <color name="gray">#939393</color>
+    <color name="gray_dark">#5F5F5F</color>
+    <color name="black">#000</color>
+    <color name="pure_black">#000</color>
+    <color name="charcoal_grey">#333c40</color>
+    <color name="translucent">#B33a4245</color>
+    <color name="transparent">#0000</color>
+    <color name="fake_black">#4a4a4a</color>
+    <color name="black_new">#313131</color>
+    <color name="sky_blue">#1784f4</color>
+    <!-- Task Status -->
+    <color name="color_available">#f5ea14</color>
+    <color name="color_busy">#2498d2</color>
+    <color name="color_unavailable">#FFFFFF</color>
+    <color name="calendar_background">#7dbfb0</color>
+
+    <color name="button_color_normal">@color/colorPrimary</color>
+    <color name="button_color_pressed">@color/colorAccent</color>
+</resources>
